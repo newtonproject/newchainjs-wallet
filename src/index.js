@@ -1,5 +1,5 @@
 var Buffer = require('safe-buffer').Buffer
-var ethUtil = require('ethereumjs-util')
+var ethUtil = require('newchainjs-util')
 var crypto = require('crypto')
 var randomBytes = require('randombytes')
 var scryptsy = require('scrypt.js')

@@ -1,21 +1,11 @@
-# ethereumjs-wallet
-
-[![NPM Package](https://img.shields.io/npm/v/ethereumjs-wallet.svg?style=flat-square)](https://www.npmjs.org/package/ethereumjs-wallet)
-[![Build Status](https://travis-ci.org/ethereumjs/ethereumjs-wallet.svg?branch=master)](https://travis-ci.org/ethereumjs/ethereumjs-wallet)
-[![Coverage Status](https://img.shields.io/coveralls/ethereumjs/ethereumjs-wallet.svg?style=flat-square)](https://coveralls.io/r/ethereumjs/ethereumjs-wallet)
-[![Gitter](https://img.shields.io/gitter/room/ethereum/ethereumjs-lib.svg?style=flat-square)](https://gitter.im/ethereum/ethereumjs-lib) or #ethereumjs on freenode
+# newchainjs-wallet
 
 A lightweight wallet implementation. At the moment it supports key creation and conversion between various formats.
-
-It is complemented by the following packages:
-- [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) to sign transactions
-- [ethereumjs-icap](https://github.com/ethereumjs/ethereumjs-icap) to manipulate ICAP addresses
-- [store.js](https://github.com/marcuswestin/store.js) to use browser storage
 
 Motivations are:
 - be lightweight
 - work in a browser
-- use a single, maintained version of crypto library (and that should be in line with `ethereumjs-util` and `ethereumjs-tx`)
+- use a single, maintained version of crypto library (and that should be in line with `newchainjs-util` and `newchainjs-tx`)
 - support import/export between various wallet formats
 - support BIP32 HD keys
 
@@ -58,7 +48,7 @@ Note: `getPublicKey()` only returns uncompressed Ethereum-style public keys.
 
 Importing various third party wallets is possible through the `thirdparty` submodule:
 
-`var thirdparty = require('ethereumjs-wallet/thirdparty')`
+`var thirdparty = require('newchainjs-wallet/thirdparty')`
 
 Constructors:
 
@@ -71,7 +61,7 @@ Constructors:
 
 To use BIP32 HD wallets, first include the `hdkey` submodule:
 
-`var hdkey = require('ethereumjs-wallet/hdkey')`
+`var hdkey = require('newchainjs-wallet/hdkey')`
 
 Constructors:
 
@@ -93,7 +83,7 @@ Instance methods:
 The Wallet can be easily plugged into [provider-engine](https://github.com/metamask/provider-engine) to provide signing:
 
 ```js
-const WalletSubprovider = require('ethereumjs-wallet/provider-engine')
+const WalletSubprovider = require('newchainjs-wallet/provider-engine')
 
 <engine>.addProvider(new WalletSubprovider(<wallet instance>))
 ```
