@@ -10,7 +10,7 @@ var fixturePrivateKeyBuffer = Buffer.from(fixturePrivateKey, 'hex')
 
 var fixturePublicKey = 'ad7ae1d8b435941e25c60f9aff78474e1e2553a13e55381fd17d9dd900702e26498f2909d26f603adcf046a7c6b583699f0a5c30d85edb61605d71f70632f277'
 var fixturePublicKeyStr = '0x' + fixturePublicKey
-//var fixturePublicKeyBuffer = Buffer.from(fixturePublicKey, 'hex')
+// var fixturePublicKeyBuffer = Buffer.from(fixturePublicKey, 'hex')
 
 var fixtureWallet = Wallet.fromPrivateKey(fixturePrivateKeyBuffer)
 
