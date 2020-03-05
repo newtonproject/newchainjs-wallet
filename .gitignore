@@ -39,4 +39,3 @@ package-lock.json
 # backwards compatibility reasons, JS files from root and root test/ folder
 # are excluded
 /*.js
-/test
